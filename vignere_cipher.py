@@ -21,5 +21,3 @@ def decrypt(c, k):
         m += chartset[(chartset.index(c[i]) - chartset.index(k[i % len(k)])) % len(chartset)]
     #Returns decrypted message
     return m
-
-print(decrypt("tsaatmvttlezlwbhvbproaszletpdmaliaxplvmhvmvrtfxevhqmjmyivaxgwiavjkvqxhrqlwquxplawyplalwziboeboedlfmlrjyiijlmkevkovvaqaevkxpvwmalialicijlivivmhgplhiuhlvrwaovvaqa", "hei"))
